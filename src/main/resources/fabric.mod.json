@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Sikijev mod",
+	"description": "Ovi mod ima i meda i limunade zajedno!",
+	"authors": [
+		"Siki/Kralj Bati"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorialmod/android-chrome-512x512.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.siki.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.siki.tutorialmod.TutorialModDataGenerator"
+		],
+        "client": [
+            "net.siki.tutorialmod.TutorialModClient"
+        ]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
